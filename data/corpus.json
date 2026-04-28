@@ -1,0 +1,26 @@
+[
+  {
+    "id": "project:muninn",
+    "source": "Muninn",
+    "sourceLabel": "Muninn",
+    "sourceHref": "https://github.com/certainly-param/Muninn",
+    "kind": "project",
+    "text": "Muninn is a RAG-backed portfolio assistant. It uses build-time local MiniLM embeddings, bundled JSON vector search, Groq Llama 3.3 streaming, and citation chips. It is designed for a zero-dollar monthly operating target."
+  },
+  {
+    "id": "architecture:runtime",
+    "source": "Architecture",
+    "sourceLabel": "Runtime Architecture",
+    "sourceHref": "https://github.com/certainly-param/Muninn",
+    "kind": "project",
+    "text": "At runtime, Muninn rate-limits requests, embeds the latest user question locally, searches the bundled JSON vector index with cosine similarity, formats the top retrieval hits as context, then streams a concise answer from Groq."
+  },
+  {
+    "id": "architecture:build-time",
+    "source": "Architecture",
+    "sourceLabel": "Build-Time Index",
+    "sourceHref": "https://github.com/certainly-param/Muninn",
+    "kind": "project",
+    "text": "Muninn builds its memory index ahead of time. The build script reads corpus items, computes MiniLM embeddings with @xenova/transformers, and writes data/muninn-index.json so deploys do not need a hosted vector database."
+  }
+]
